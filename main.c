@@ -62,13 +62,14 @@ int checkIfNotChanged(int cols, int rows, const char * lastGen, const char* newG
 }
 
 char * newGen(int rows, int cols, char*prevGen){
-    char* steppedSimulation = calloc(rows*cols, sizeof(char));
+    char* steppedSimulation = calloc(rows*cols, sizeof(int));
     if(steppedSimulation == NULL) return NULL;
     for(int y = 1; y < rows -1; y++){
         for(int x = 1; x < cols-1; x++) {
             int live = countNeighbours(cols, x, y, prevGen);
             char cell = *(prevGen + y * cols + x);
             if (cell == '#') live--;
+            *(steppedSimulation + y*cols + x) = cell;
             if (live < 2) {
                 *(steppedSimulation + y * cols + x) = '.';
             }
@@ -86,21 +87,21 @@ char * newGen(int rows, int cols, char*prevGen){
 
 void start(int rows, int cols) {
     puts("Lets play in life");
-    char* grid = create(rows,cols);
-    if(grid == NULL) return;
+    char* simulation = create(rows, cols);
+    if(simulation == NULL) return;
     int gen = 0;
-    display(rows,cols,grid, gen);
+    display(rows, cols, simulation, gen);
     while(1){
-        char* newSim = newGen(rows, cols, grid);
+        char* newSim = newGen(rows, cols, simulation);
         if(newSim == NULL) return;
-        if(checkIfNotChanged(cols, rows, grid, newSim) == 0){
+        if(checkIfNotChanged(cols, rows, simulation, newSim) == 0){
             printf("Seems like simulation is looped!");
             break;
         }
-        free(grid);
-        grid = newSim;
+        free(simulation);
+        simulation = newSim;
         ++gen;
-        display(rows,cols,grid, gen);
+        display(rows, cols, simulation, gen);
         Sleep(1000);
     }
 }
@@ -110,7 +111,7 @@ double getRandomDoubleInRange(double min, double max){
 }
 
 char* create(int rows, int cols){
-    char* grid = (char*) calloc(rows*cols, sizeof(char));
+    char* grid = (char*) calloc(rows*cols, sizeof(int));
     if(grid == NULL){
         return NULL;
     }
