@@ -1,3 +1,12 @@
 # ninja log v5
 0	107	6903304378146164	CMakeFiles/Game_of_life.dir/main.c.obj	60cb3856f1dcd143
 108	273	6903304379796151	Game_of_life.exe	44b769431bc8646d
+2	178	6907271853313584	CMakeFiles/Game_of_life.dir/main.c.obj	60cb3856f1dcd143
+12	182	6907271853313584	CMakeFiles/Game_of_life.dir/Code/Grid.c.obj	a01d88b125d2def1
+183	450	6907271856023986	Game_of_life.exe	1c82b8c427e00b8d
+2	778	6907327230849553	CMakeFiles/Game_of_life.dir/main.c.obj	60cb3856f1dcd143
+779	916	6907327232210262	Game_of_life.exe	1c82b8c427e00b8d
+3	804	6907327398331026	CMakeFiles/Game_of_life.dir/main.c.obj	60cb3856f1dcd143
+804	934	6907327399674630	Game_of_life.exe	1c82b8c427e00b8d
+2	787	6907346327774705	CMakeFiles/Game_of_life.dir/main.c.obj	60cb3856f1dcd143
+788	959	6907346329483824	Game_of_life.exe	1c82b8c427e00b8d
