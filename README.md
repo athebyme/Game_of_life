@@ -5,4 +5,4 @@
 
 
 ### 1) ```gcc -Wall -std=c99 main.c```    *<< that compiles exe file*
-### *run game via   >>*   ```a 15 15```   _<< where 15 is the width, 15 is the height._
+### *run game via   >>*   ```a 15 20```   _<< where 15 is the height, 20 is the width._
