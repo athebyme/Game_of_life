@@ -1,4 +1,4 @@
-# Game_of_life
+# Game of life
 ## *main.c* conatains whole code
 
 ## to run: use console with 2 parametrs -> width / height
