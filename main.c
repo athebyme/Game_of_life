@@ -11,8 +11,6 @@ int countNeighbours(int cols, int x, int y, const char*grid);
 char* newGen(int rows, int cols, char * prevGen);
 
 int main(int argc, char* argv[]) {
-    int a = 1;
-    printf(a/0);
     srand(time(NULL));
     int rows=  atoi(argv[1]);
     if(rows <= 0 ){
