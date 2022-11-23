@@ -10,5 +10,6 @@ workflows:
   lint-code:
     jobs:
       - github-super-linter/lint:
+          uses: github/super-linter@v3.17.0
           context: Super-Linter-Options
           version: v3.17.0
