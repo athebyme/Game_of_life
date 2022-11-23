@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <windows.h>
+//#include <windows.h>
 #include <time.h>
 
 void start(int rows, int cols, int countIters);
@@ -162,7 +162,7 @@ void start(int rows, int cols, int countIters) {
         }else gen++;
 
         display(rows, cols, simulation, gen);
-        Sleep(1000);
+        //Sleep(1000);
     }
 }
 
