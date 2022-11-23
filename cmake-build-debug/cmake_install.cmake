@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Anton/Desktop/Game of life
+# Install script for directory: C:/cygwin64/home/Anton/Game_of_life
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Anton/Desktop/Game of life/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/cygwin64/home/Anton/Game_of_life/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
