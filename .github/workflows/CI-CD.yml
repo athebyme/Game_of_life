@@ -1,6 +1,9 @@
 version: '2.1'
 on:
-  uses: github/super-linter@v3.17.0
+  
+steps:
+    uses: github/super-linter@v3.17.0
+    uses: actions/checkout@v2
 orbs:
   github-super-linter: circleci/github-super-linter@1.0
 workflows:
