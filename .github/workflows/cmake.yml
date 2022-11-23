@@ -35,8 +35,4 @@ jobs:
       # See https://cmake.org/cmake/help/latest/manual/ctest.1.html for more detail
       run: ctest -C ${{env.BUILD_TYPE}}
       
-    - name: Setup Nuget.exe
-      # You may pin to the exact commit or the version.
-      # uses: warrenbuckley/Setup-Nuget@09c4593220c119ed8d6a811954d72bddd986e29a
-      uses: warrenbuckley/Setup-Nuget@v1
   
