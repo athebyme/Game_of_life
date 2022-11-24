@@ -29,5 +29,3 @@ The distribution of living cells at the beginning of the game is called the firs
 + *maintaining a Git repository with attaching commits in the project management system.*
 + *CI/CD setup*
 ### **2)Provide an iterative version of project management. With the number of releases**
-
-
